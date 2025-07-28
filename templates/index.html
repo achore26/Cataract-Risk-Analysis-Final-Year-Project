@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block content %}
+    <!-- Hero Section -->
+    <div class="hero-section bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4">Welcome to Cataract Risk Assessment</h1>
+            <p class="lead">A simple and effective way to assess your risk of cataracts using advanced AI technology.</p>
+            <div class="mt-4">
+                <a href="{{ url_for('register') }}" class="btn btn-light btn-lg">Get Started</a>
+                <a href="{{ url_for('login') }}" class="btn btn-outline-light btn-lg">Login</a>
+                <!-- Add Admin Login Button -->
+                <a href="{{ url_for('login') }}?admin=true" class="btn btn-warning btn-lg">Admin Login</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="container my-5">
+        <div class="row text-center">
+            <div class="col-md-4">
+                <div class="feature-icon mb-3">
+                    <i class="fas fa-camera fa-3x text-primary"></i>
+                </div>
+                <h3>Upload or Capture</h3>
+                <p>Upload your eye photo or capture one directly using your webcam for instant analysis.</p>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-icon mb-3">
+                    <i class="fas fa-brain fa-3x text-primary"></i>
+                </div>
+                <h3>AI-Powered Analysis</h3>
+                <p>Our advanced AI model provides accurate cataract risk assessments in seconds.</p>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-icon mb-3">
+                    <i class="fas fa-file-pdf fa-3x text-primary"></i>
+                </div>
+                <h3>Download Reports</h3>
+                <p>Generate and download detailed PDF reports for your records or to share with your doctor.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call-to-Action Section -->
+    <div class="bg-light py-5">
+        <div class="container text-center">
+            <h2>Ready to Get Started?</h2>
+            <p class="lead">Join thousands of users who have already assessed their cataract risk with our tool.</p>
+            <a href="{{ url_for('register') }}" class="btn btn-primary btn-lg">Sign Up Now</a>
+        </div>
+    </div>
+{% endblock %}

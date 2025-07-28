@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>Upload Your Photo</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <div class="mb-3">
+            <input type="file" name="file" class="form-control" accept=".png,.jpg,.jpeg" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Upload and Analyze</button>
+    </form>
+
+    <hr>
+    <h2>Or Capture from Webcam</h2>
+    <div class="mb-3">
+        <video id="webcam" autoplay playsinline width="640" height="480" class="img-fluid"></video>
+    </div>
+    <button id="capture-btn" class="btn btn-success">Capture Photo</button>
+    <canvas id="canvas" style="display:none;"></canvas>
+
+    <form id="webcam-form" method="POST" action="{{ url_for('upload') }}" enctype="multipart/form-data">
+        <input type="hidden" name="file" id="webcam-file">
+    </form>
+
+    <script>
+        const video = document.getElementById('webcam');
+        const canvas = document.getElementById('canvas');
+        const captureBtn = document.getElementById('capture-btn');
+        const webcamForm = document.getElementById('webcam-form');
+        const webcamFile = document.getElementById('webcam-file');
+
+        // Access the webcam
+        navigator.mediaDevices.getUserMedia({ video: true })
+            .then((stream) => {
+                video.srcObject = stream;
+            })
+            .catch((err) => {
+                console.error("Error accessing the webcam: ", err);
+            });
+
+        // Capture photo
+        captureBtn.addEventListener('click', () => {
+            canvas.width = video.videoWidth;
+            canvas.height = video.videoHeight;
+            canvas.getContext('2d').drawImage(video, 0, 0, canvas.width, canvas.height);
+
+            // Convert canvas image to a file
+            canvas.toBlob((blob) => {
+                const file = new File([blob], 'webcam_photo.png', { type: 'image/png' });
+                const dataTransfer = new DataTransfer();
+                dataTransfer.items.add(file);
+                webcamFile.files = dataTransfer.files;
+
+                // Submit the form
+                webcamForm.submit();
+            }, 'image/png');
+        });
+    </script>
+{% endblock %}

@@ -1,0 +1,19 @@
+/* Custom Styles */
+.hero-section {
+    background: linear-gradient(rgba(0, 123, 255, 0.8), rgba(0, 123, 255, 0.8)), url('https://via.placeholder.com/1500x800');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+}
+
+.feature-icon {
+    margin-bottom: 20px;
+}
+
+.feature-icon i {
+    color: #007bff;
+}
+
+.bg-light {
+    background-color: #f8f9fa !important;
+}
