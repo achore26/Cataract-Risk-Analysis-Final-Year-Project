@@ -154,44 +154,56 @@ The following diagrams illustrate the project's data insights, user journey, and
 Bar Chart: Most Requested System Features
 This chart presents the results from a user survey, highlighting the most prioritized features for the web application. The data directly informed the functional requirements of the system, emphasizing the need for simplicity, data privacy, and mobile compatibility.
 ![Bar Chart: Most Requested System Features](path/to/your/bar_chart_features_image.png)
+<img width="758" height="560" alt="image" src="https://github.com/user-attachments/assets/8c6589f4-98a6-4cc4-b137-b0aaf9e58917" />
 
 Pie Chart: Internet Access Frequency
 This pie chart shows the distribution of internet usage frequency among survey participants. The data confirms a high level of digital readiness within the target population, justifying the development of a web-based solution.
 ![Pie Chart: Internet Access Frequency](path/to/your/pie_chart_image.png)
+<img width="537" height="500" alt="image" src="https://github.com/user-attachments/assets/0cbd2374-322f-4a91-a9f9-78496aaf98c2" />
 
 Bar Chart: Digital Comfort by Age Group
 This visualization illustrates the percentage of users who reported being "comfortable" versus "not comfortable" with digital tools, segmented by age. The data highlights the need for an intuitive and user-friendly interface that accommodates users with varying levels of digital literacy, especially among older demographics.
 ![Bar Chart: Digital Comfort by Age Group](/home/alby/Desktop/flask trial/images)
+<img width="758" height="560" alt="image" src="https://github.com/user-attachments/assets/c86900e8-bb23-4315-b6f5-3ba9e809a560" />
 
 Wireframe: Login/Registration Page
 A visual blueprint of the login and registration page, outlining the layout and key interactive elements for user authentication.
 ![Wireframe: Login/Registration Page](path/to/your/login_page_image.png)
+<img width="622" height="719" alt="image" src="https://github.com/user-attachments/assets/a7b27252-9b03-4d29-b3c8-91a25234c8f2" />
 
 Wireframe: Image Upload Page
 The wireframe for the core user functionality, showing the interface for uploading eye images and providing clear instructions and guidelines for image quality.
 ![Wireframe: Image Upload Page](path/to/your/image_upload_page_image.png)
+<img width="906" height="603" alt="image" src="https://github.com/user-attachments/assets/9b170be8-06bb-4a7e-9cd9-8711ad88f361" />
 
 Wireframe: Analysis Results Page
 A wireframe that displays the final output of the system's analysis, including the risk prediction, confidence score, and recommended next steps for the user.
 ![Wireframe: Analysis Results Page](path/to/your/results_page_image.png)
+<img width="870" height="741" alt="image" src="https://github.com/user-attachments/assets/09e1ced8-529a-4364-bc6d-4b4a48ed4822" />
 
 Wireframe: Admin Dashboard
 This wireframe shows the administrative interface, providing an overview of system usage, active users, and high-risk cases for monitoring and analysis.
 ![Wireframe: Admin Dashboard](path/to/your/admin_dashboard_image.png)
+<img width="975" height="651" alt="image" src="https://github.com/user-attachments/assets/e2f6f782-23fa-45e0-9e0a-16e464c9a42f" />
+
 
 📊 System Diagrams
 Technical and Logical Diagrams
 Use Case Diagram
 This diagram illustrates the interactions between the primary actors (User and Admin) and the system. It defines all major functionalities and system boundaries, providing a high-level view of how users will interact with the application.
 ![Use Case Diagram](path/to/your/use_case_diagram_image.png)
+<img width="975" height="857" alt="image" src="https://github.com/user-attachments/assets/cb153a14-f248-4153-b7ba-0f4cb7f2ab3e" />
 
 Entity Relationship Diagram (ERD)
 The ERD models the relationships between core data entities in the system, including users, prediction logs, and image data. This diagram is crucial for understanding the database structure and how different pieces of information are connected.
 ![Entity Relationship Diagram](path/to/your/erd_image.png)
+<img width="941" height="659" alt="image" src="https://github.com/user-attachments/assets/9850394e-0146-4f22-8356-40a5c1f43a63" />
 
 System Flow Diagram
 This flowchart details the logical flow of the application, from user input to final output. It maps out the sequence of events for user authentication, image validation, model prediction, and result delivery.
 ![System Flow Diagram](path/to/your/system_flow_diagram_image.png)
+<img width="1159" height="1492" alt="image" src="https://github.com/user-attachments/assets/39cfc8d7-d0a0-417d-9d01-f68626e634a4" />
+
 
 🧪 System Testing and Validation
 The project was rigorously tested to ensure it meets all functional and non-functional requirements. The testing phase focused on validating the system's correctness, performance, security, and usability.
