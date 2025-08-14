@@ -148,10 +148,8 @@ Physical Design: Detailed using a Use Case Diagram, Entity Relationship Diagram 
 🖥️ User Interface Design
 Data Visualization and Wireframes
 The following diagrams illustrate the project's data insights, user journey, and system architecture.
+<img width="833" height="397" alt="image" src="https://github.com/user-attachments/assets/441b7a7c-e212-40bf-87c8-4caef0604f47" />
 
-Gantt Chart - Cataract Risk Assessment System
-A Gantt chart outlining the project's schedule, from research and proposal refinement to system deployment and final report submission. It provides a visual timeline of all key tasks and milestones over an 8-month period.
-![Gantt Chart - Cataract Risk Assessment System](path/to/your/gantt_chart_image.png)
 
 Bar Chart: Most Requested System Features
 This chart presents the results from a user survey, highlighting the most prioritized features for the web application. The data directly informed the functional requirements of the system, emphasizing the need for simplicity, data privacy, and mobile compatibility.
