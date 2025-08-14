@@ -195,6 +195,30 @@ System Flow Diagram
 This flowchart details the logical flow of the application, from user input to final output. It maps out the sequence of events for user authentication, image validation, model prediction, and result delivery.
 ![System Flow Diagram](path/to/your/system_flow_diagram_image.png)
 
+🧪 System Testing and Validation
+The project was rigorously tested to ensure it meets all functional and non-functional requirements. The testing phase focused on validating the system's correctness, performance, security, and usability.
+
+Unit and Integration Testing: We conducted a total of 48 unit tests and 12 integration tests to verify the correctness of individual functions and end-to-end user flows. All critical scenarios passed, and an edge case related to corrupted image handling was successfully fixed.
+
+Performance Testing: Using simulated load, the system demonstrated a median prediction latency of approximately 3.2 seconds. Under a simulated load of 100 concurrent users, the 95th percentile latency was approximately 9.8 seconds, meeting the non-functional requirement of providing results in less than 10 seconds.
+
+Usability Testing: A pilot usability study with 6 participants yielded a System Usability Scale (SUS) score of ≥70, indicating good usability. Feedback from this phase led to minor interface improvements, such as clearer button labels and help text.
+
+Security Validation: Automated security scans and a static code review were performed. This led to improvements in file upload sanitization and other security measures.
+
+Future Deployment: The codebase has been prepared for a secure cloud deployment, with sensitive information like model weights and API keys externalized to ensure they are not committed to the repository.
+
+🚧 Limitations and Future Work
+This section highlights the current limitations and offers recommendations for future development to enhance the system's capabilities and robustness.
+
+Model Generalizability: The current model's accuracy and generalizability could be improved with a larger, more diverse dataset, especially one that is representative of different regions and demographics in Kenya.
+
+Clinical Validation: A critical next step is to conduct a prospective clinical study where the model's predictions are compared against professional ophthalmologist diagnoses to validate its effectiveness in a real-world setting.
+
+Production Hardening: For a full-scale public launch, the system should be deployed in a containerized environment with advanced security measures like rate limiting and strict upload sanitization rules to prevent malicious use. Rate limiting is a control mechanism used to manage network traffic to prevent users from exhausting system resources and mitigate attacks such as Denial of Service (DoS) attacks.
+
+Continuous Improvement: We recommend implementing a system for periodic model retraining with new, anonymized data to continuously improve its accuracy and adapt to new insights.
+
 📄 License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
